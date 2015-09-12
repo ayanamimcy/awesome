@@ -11,6 +11,7 @@ local naughty = require("naughty")
 local menubar = require("menubar")
 vicious = require("vicious")
 local fixwidthtextbox = require("fixwidthtextbox")
+local hidetray = require("hidetray")
 require("menu")
 
 -- {{{ Error handling
@@ -229,6 +230,12 @@ backlight:buttons(awful.util.table.join(
     ))
 -- }}}
 
+--(((hidesystray
+tray = hidetray({revers = true})
+hidetray:show(1)
+hidetray.hidetimer:start()
+--)))
+
 -- }}}
 
 -- Create a laucher widget and a main menu
@@ -355,6 +362,11 @@ for s = 1, screen.count() do
 
     -- Widgets that are aligned to the right
     local right_layout = wibox.layout.fixed.horizontal()
+    --if s == 1 then right_layout:add(wibox.widget.systray()) end
+    for s = 1, screen.count() do
+        hidetray:attach({ wibox = mywibox[s], screen = s})
+        right_layout:add(tray[s])
+    end
     right_layout:add(batt)
     right_layout:add(temp)
     right_layout:add(memwidget)
@@ -363,7 +375,6 @@ for s = 1, screen.count() do
     right_layout:add(backlight)
     right_layout:add(mytextclock)
     right_layout:add(volume)
-    if s == 1 then right_layout:add(wibox.widget.systray()) end
     right_layout:add(mylayoutbox[s])
 
     -- Now bring it all together (with the tasklist in the middle)
