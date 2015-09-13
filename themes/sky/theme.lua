@@ -8,10 +8,11 @@
 theme = {}
 theme.font          = "文泉驿等宽微米黑 Regular 9"
 
-theme.bg_focus      = "#e2eeea80"
-theme.bg_normal     = "#729fcf70"
-theme.bg_urgent     = "#fce94f80"
-theme.bg_minimize   = "#0067ce80"
+theme.bg_focus      = "#e2eeea60"
+theme.bg_normal     = "#729fcf50"
+theme.bg_urgent     = "#fce94f60"
+--theme.bg_minimize   = "#0067ce60"
+theme.bg_minimize   = theme.bg_normal
 theme.bg_systray    = theme.bg_normal
 
 theme.fg_normal     = "#2e3436"
@@ -19,7 +20,7 @@ theme.fg_focus      = "#2e3436"
 theme.fg_urgent     = "#2e3436"
 theme.fg_minimize   = "#2e3436"
 
-theme.border_width  = 2
+theme.border_width  = 1
 theme.border_normal = "#dae3e0"
 theme.border_focus  = "#729fcf"
 theme.border_marked = "#eeeeec"
