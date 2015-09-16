@@ -283,6 +283,17 @@ menubar.utils.terminal = terminal -- Set the terminal for applications that requ
 -- {{{ Wibox
 -- Create a textclock widget
 mytextclock = awful.widget.textclock()
+mytextclock:buttons(awful.util.table.join(
+    awful.button({ }, 1, function()
+        t = io.popen('cal')    
+        a = t:read("*all")
+        t:close()
+        naughty.notify({
+            text = a
+        })
+        mytextclock.bg = beautiful.bg_normal
+    end)
+))
 
 -- Create a wibox for each screen and add it
 mywibox = {}

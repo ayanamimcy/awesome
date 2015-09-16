@@ -16,6 +16,7 @@
 
  local menue1b7cee794666669f55acead93513971 = {
      {"Feh", "feh ", "///usr/share/feh/images/feh.png" },
+     {"GNU 图像处理程序", "gimp-2.8 ", "/usr/share/icons/hicolor/16x16/apps/gimp.png" },
      {"gThumb", "gthumb ", "/usr/share/icons/hicolor/16x16/apps/gthumb.png" },
      {"文档查看器", "evince ", "/usr/share/icons/hicolor/16x16/apps/evince.png" },
  }
