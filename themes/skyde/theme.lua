@@ -6,25 +6,20 @@
 
 -- BASICS
 theme = {}
-theme.font          = "文泉驿等宽微米黑 Regular 9"
+theme.font          = "文泉驿等宽微米黑 Regular 10"
 
-theme.bg_focus      = "#e2eeea60"
-theme.bg_normal     = "#729fcf50"
-theme.bg_urgent     = "#fce94f60"
---theme.bg_minimize   = "#0067ce60"
-theme.bg_minimize   = theme.bg_normal
+theme.bg_focus      = "#e2eeea"
+theme.bg_normal     = "#729fcf"
+theme.bg_urgent     = "#fce94f"
+theme.bg_minimize   = "#0067ce"
 theme.bg_systray    = theme.bg_normal
 
---theme.fg_normal     = "#2e3436"
-theme.fg_normal     = "#ffffff"
---theme.fg_focus      = "#2e3436"
-theme.fg_focus      = theme.fg_focus
---theme.fg_urgent     = "#2e3436"
-theme.fg_urgent     = theme.fg_focus
---theme.fg_minimize   = "#2e3436"
-theme.fg_minimize   = theme.fg_focus
+theme.fg_normal     = "#2e3436"
+theme.fg_focus      = "#2e3436"
+theme.fg_urgent     = "#2e3436"
+theme.fg_minimize   = "#2e3436"
 
-theme.border_width  = 1
+theme.border_width  = 2
 theme.border_normal = "#dae3e0"
 theme.border_focus  = "#729fcf"
 theme.border_marked = "#eeeeec"
@@ -51,7 +46,7 @@ theme.taglist_squares_sel   = "/usr/share/awesome/themes/default/taglist/squaref
 theme.taglist_squares_unsel = "/usr/share/awesome/themes/default/taglist/squarew.png"
 
 -- MISC
-theme.wallpaper             = "/home/mcy/Pictures/Wallpapers/7daff00ac6e31ccbfdf4c6547e40f77f.jpg"
+theme.wallpaper             = "/usr/share/awesome/themes/sky/sky-background.png"
 theme.taglist_squares       = "true"
 theme.titlebar_close_button = "true"
 theme.menu_height           = 15

@@ -577,15 +577,15 @@ awful.rules.rules = {
     -- wps
      {   
          rule = { class = "Wps" },
-         properties = { floating = true,  tag = tags[1][4] },
+         properties = { floating = true, tag = tags[1][4], switchtotag=true },
      },  
      {   
          rule = { class = "Wpp" },
-         properties = { floating = true,  tag = tags[1][4] },
+         properties = { floating = true, tag = tags[1][4], switchtotag=true },
      },  
      {   
          rule = { class = "Et" },
-         properties = { floating = true, tag = tags[1][4] },
+         properties = { floating = true, tag = tags[1][4], switchtotag=true },
      },  
 
 }
